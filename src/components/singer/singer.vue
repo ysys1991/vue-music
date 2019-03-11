@@ -60,11 +60,11 @@ export default {
       // 为了得到有序列表 需处理map
       let hot = []
       let ret = []
-      for(let key in map) {
+      for (let key in map) {
         let val = map[key]
-        if(val.title.match(/[a-zA-Z]/)) {
+        if (val.title.match(/[a-zA-Z]/)) {
           ret.push(val)
-        }else if(val.title === HOT_NAME) {
+        } else if (val.title === HOT_NAME) {
           hot.push(val)
         }
       }
